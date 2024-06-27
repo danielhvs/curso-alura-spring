@@ -16,8 +16,8 @@ public class SpringmatchApplication implements CommandLineRunner {
   @Override
   public void run(String... args) throws Exception {
     var consumoApi = new ConsumoApi();
-    String obterDados = consumoApi.obterDados("https://www.omdbapi.com/?t=gilmore+girls&apikey=6585022c");
-    System.out.println("obterDados: " + obterDados);
+    System.out.println("gilmore: " + consumoApi.obterDados("https://www.omdbapi.com/?t=gilmore+girls&apikey=6585022c"));
+    System.out.println("cafe: " + consumoApi.obterDados("https://coffee.alexflipnote.dev/random.json"));
     for (String string : args) {
       System.out.println("arg: " + string);
     }
