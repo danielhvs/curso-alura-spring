@@ -2,7 +2,6 @@ package br.com.alura.springmatch.service;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
-import java.net.Proxy;
 import java.net.ProxySelector;
 import java.net.URI;
 import java.net.http.HttpClient;
